@@ -1,0 +1,21 @@
+# Text editors swap/temporary files
+*~
+*.swp
+*.orig
+*.bak
+*.o
+*tags
+
+# Dependency files
+*.d
+
+# Compiled python files
+*.pyc
+
+# Libraries
+*.a
+*.so
+*.so.*
+
+# Directory for temporary files
+tmp
