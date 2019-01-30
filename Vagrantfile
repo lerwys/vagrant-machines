@@ -76,7 +76,7 @@ Vagrant.configure("2") do |config|
 
   $ansible_cfg_script = <<-SCRIPT
     echo "Configuring Ansible"
-    echo -e "[servers]\n192.168.33.20" >> /etc/ansible/hosts
+    echo -e "[servers]\n192.168.33.20\n192.168.33.30" >> /etc/ansible/hosts
   SCRIPT
 
   config.vm.define "client" do |client|
