@@ -19,3 +19,6 @@
 
 # Directory for temporary files
 tmp
+
+# Vagrant files
+.vagrant
