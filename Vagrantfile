@@ -92,4 +92,13 @@ Vagrant.configure("2") do |config|
     server.vm.network "private_network", ip: "192.168.33.20",
     virtualbox__intnet: true
   end
+
+  config.vm.define "ansibleboot" do |ansibleboot|
+    ansibleboot.vm.hostname = "ansibleboot"
+    ansibleboot.vm.network "private_network", ip: "192.168.33.30",
+    virtualbox__intnet: true
+    ansibleboot.vm.provision "ansible" do |ansible|
+      ansible.playbook = "playbook.yml"
+    end
+  end
 end

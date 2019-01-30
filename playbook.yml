@@ -1,0 +1,17 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: Ensure git is installed
+      apt:
+        name: git
+        state: present
+    - name: Ensure NTP client is installed
+      apt:
+        name: ntp
+        state: present
+    - name: Ensure NTP client is running and persistent
+      service:
+        name: ntp
+        state: started
+        enabled: yes
+
