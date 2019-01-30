@@ -22,3 +22,6 @@ tmp
 
 # Vagrant files
 .vagrant
+
+# Ansible files
+*.retry
